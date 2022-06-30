@@ -4,6 +4,7 @@ package com.jason.s3
 /**
  * takeIf()
  * takeIf()的參數需要傳入一個返回Boolean的函數，如果該Boolean為true則返回調用他的物件本身，false則返回null
+ * takeIf()中有一個it，就是呼叫takeIf()的物件
  */
 fun main() {
     println(checkPermissionAction("root", "!@#$"))
