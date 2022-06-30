@@ -1,6 +1,11 @@
 package com.jason.s2
 
 //Kotlin語言的apply內置函數
+/**
+ * apply()
+ * 1. apply()返回類型一直是call apply()的物件本身
+ * 2. apply()匿名函數持有的是this，this就是call apply()的物件本身
+ */
 fun main() {
     val info = "Hi Jason"
     /**
