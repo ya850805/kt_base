@@ -1,4 +1,4 @@
-package com.jason.s2
+package com.jason.s3
 
 //Kotlin語法中異常處理與自定義異常特點
 fun main() {
