@@ -36,7 +36,7 @@ class KtBase108<T>(private val isR: Boolean, vararg objects: T) {
 }
 
 /**
- * 範型也可以接收null，但是接收null，要處理好
+ * 泛型也可以接收null，但是接收null，要處理好
  */
 fun <T> inputObj(item: T) {
     println((item as String?)?.length?: "item is null.")

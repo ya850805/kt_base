@@ -1,6 +1,6 @@
 package com.jason.s6
 
-//Kotlin語言的範型函數學習
+//Kotlin語言的泛型函數學習
 fun main() {
     /**
      * 四個物件打印
@@ -44,7 +44,7 @@ fun main() {
 }
 
 /**
- * 範型T已經包含null，不需要加?
+ * 泛型T已經包含null，不需要加?
  */
 fun <T> show(item: T) {
     item?.also {

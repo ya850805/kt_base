@@ -14,7 +14,7 @@ fun main() {
 }
 
 /**
- * 整個SetClass中，範型T相關的只能當作輸入，不能當作輸出 -> 逆變
+ * 整個SetClass中，泛型T相關的只能當作輸入，不能當作輸出 -> 逆變
  */
 class SetClass<in T>() {
     fun set1(item: T) = println("set1 設置的item是$item")
@@ -26,7 +26,7 @@ class SetClass<in T>() {
 }
 
 /**
- * 整個GetClass中，範型T相關的只能當作輸出，不能當作輸入 -> 協變
+ * 整個GetClass中，泛型T相關的只能當作輸出，不能當作輸入 -> 協變
  */
 class GetClass<out T>(private val item: T) {
 

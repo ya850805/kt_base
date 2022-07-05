@@ -1,6 +1,6 @@
 package com.jason.s6
 
-//Kotlin語言的定義範型類
+//Kotlin語言的定義泛型類
 fun main() {
     val student1 = Student0("Jason", 25, 'M')
     val student2 = Student0("Juan", 26, 'F')

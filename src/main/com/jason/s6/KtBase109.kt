@@ -5,10 +5,10 @@ fun main() {
     val p1: Producer<Animal> = ProducerClass1()
 
     /**
-     * 默認情況下，範型的子類對象不可以賦值給範型的父類對象
+     * 默認情況下，泛型的子類對象不可以賦值給泛型的父類對象
      * ex. List<CharSequence> list = new ArrayList<String>();  ->  編譯錯誤
      *
-     * 添加out後，範型的子類對象(ProducerClass2())可以賦值給範型的父類對象(Producer<Animal>)，out T就相當於Java的? extends T
+     * 添加out後，泛型的子類對象(ProducerClass2())可以賦值給泛型的父類對象(Producer<Animal>)，out T就相當於Java的? extends T
      * ex. List<? extends CharSequence> list = new ArrayList<String>();
      */
     val p2: Producer<Animal> = ProducerClass2()
@@ -16,7 +16,7 @@ fun main() {
     val p4: Producer<Animal> = ProducerClass4()
 
     /**
-     * 協變：父類範型聲明處 可以接收 子類範型具體處
+     * 協變：父類泛型聲明處 可以接收 子類泛型具體處
      */
 }
 

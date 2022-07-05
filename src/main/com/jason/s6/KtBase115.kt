@@ -31,7 +31,7 @@ fun main() {
 }
 
 /**
- * 如果範型為String就打印其長度，否則就返回提示信息
+ * 如果泛型為String就打印其長度，否則就返回提示信息
  */
 fun <T> T.showContentInfo() = if (this is String) println("字符串長度是：${length}") else println("不是字符串，你的內容是$this")
 

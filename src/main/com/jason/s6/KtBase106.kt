@@ -1,6 +1,6 @@
 package com.jason.s6
 
-//Kotlin語言的範型類型約束學習
+//Kotlin語言的泛型類型約束學習
 fun main() {
     val any = MyAnyClass("Jason1")
     val person = PersonClass("Jason1")
@@ -28,7 +28,7 @@ class TeacherClass(name: String): PersonClass(name)
 class DogClass(name: String)
 
 /**
- * 範型約束
+ * 泛型約束
  * T: PersonClass，相當於Java的T extends PersonClass，只能傳入PersonClass和其子類
  */
 class KtBase106<T: PersonClass>(private val input: T, private val isR: Boolean = true) {

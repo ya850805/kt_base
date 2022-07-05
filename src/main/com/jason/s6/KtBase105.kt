@@ -1,6 +1,6 @@
 package com.jason.s6
 
-//Kotlin語言的範型變換實戰
+//Kotlin語言的泛型變換實戰
 fun main() {
     /**
      * Int轉String
