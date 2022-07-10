@@ -22,5 +22,14 @@ fun main() {
     }.forEach {
         println(it)
     }
+
+    println()
+
+    /***********************************/
+
+    /**
+     * 更簡潔可以一行完成
+     */
+    listOf("Jason", "Juan", "Tom", "Marry").zip(listOf(25, 26, 30, 35)).toMap().map { "your name: ${it.key}, your age: ${it.value}" }.forEach { println(it) }
 }
 
