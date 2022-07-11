@@ -1,4 +1,4 @@
-package com.jason.s7
+package com.jason.s7.ktBase130
 
 /**
  * Kotlin語言的單例模式

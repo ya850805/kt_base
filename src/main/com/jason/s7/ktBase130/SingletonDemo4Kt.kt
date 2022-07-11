@@ -1,11 +1,11 @@
-package com.jason.s7
+package com.jason.s7.ktBase130
 
 /**
  * 懶漢式的實現(線程安全雙重校驗)，Kotlin版本
  */
 class SingletonDemo4Kt private constructor() {
     companion object {
-        val instance: SingletonDemo4Kt by lazy ( mode = LazyThreadSafetyMode.SYNCHRONIZED ) {SingletonDemo4Kt()}
+        val instance: SingletonDemo4Kt by lazy ( mode = LazyThreadSafetyMode.SYNCHRONIZED ) { SingletonDemo4Kt() }
     }
 
     fun show() {

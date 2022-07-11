@@ -1,4 +1,4 @@
-package com.jason.s7;
+package com.jason.s7.ktBase130;
 
 /**
  * 懶漢式的實現(線程安全)，Java版本
