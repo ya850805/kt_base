@@ -10,6 +10,8 @@ fun main() {
         "[$this]"
     }.map {
         "@@$this@@"
+    }.observer {
+        println(this)
     }
 }
 
@@ -20,6 +22,8 @@ fun main() {
  * value就是create操作符最後一行的返回值
  */
 class RxJavaCoreClassObject<T>(var value: T)
+
+inline fun<T> RxJavaCoreClassObject<T>.observer(lambda: T.() -> Unit) = lambda(value)
 
 inline fun<T, R> RxJavaCoreClassObject<T>.map(mapAction: T.() -> R): RxJavaCoreClassObject<R> = RxJavaCoreClassObject(mapAction(this.value))
 
