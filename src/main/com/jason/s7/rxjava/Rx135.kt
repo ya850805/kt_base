@@ -25,6 +25,9 @@ class RxJavaCoreClassObject<T>(var value: T)
 
 inline fun<T> RxJavaCoreClassObject<T>.observer(lambda: T.() -> Unit) = lambda(value)
 
+/**
+ * map的輸入源就是create輸出源的value
+ */
 inline fun<T, R> RxJavaCoreClassObject<T>.map(mapAction: T.() -> R): RxJavaCoreClassObject<R> = RxJavaCoreClassObject(mapAction(this.value))
 
 /**
